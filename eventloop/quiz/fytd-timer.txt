@@ -1,1 +1,5 @@
 - In eventloop/timer.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+
+timeout is running after console log and baz function
+
+this is becouse the console log and baz are called in close callbacks before the end of timer check.

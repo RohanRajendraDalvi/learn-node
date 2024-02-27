@@ -1,2 +1,7 @@
 - Explain the order of execution in terms of the event loop for eventloop/immediate.js.
 - Will the order of execution change if timeout is changed to 0? Why or why not?
+
+1. the order was the , data error,
+then timeout and then the immidate function.
+
+2. I took out set immediate out of the fs read function.

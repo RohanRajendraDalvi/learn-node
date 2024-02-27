@@ -1,1 +1,8 @@
 - In eventloop/poll.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+
+This server has 2 functions
+
+someAsyncOperation and foo,
+
+this server runs the event loop for Async function after simple functions.
+
