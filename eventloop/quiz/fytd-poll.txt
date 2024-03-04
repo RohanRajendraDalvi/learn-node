@@ -1,1 +1,6 @@
 - In eventloop/poll.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+function foo gets executed first,
+and then console log done is called,
+then the Async op is performed.
+
+this happens becouse the someAsyncOperation goes into the timer waitlist while the other 2 functions get called immediately.
